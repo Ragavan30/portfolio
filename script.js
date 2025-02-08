@@ -66,15 +66,34 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// 4. Circular Progress for Professional Skills
 const circles = document.querySelectorAll('.circle');
 
-circles.forEach(circle => {
+const animateCircle = (circle) => {
     const percent = circle.getAttribute('data-percent');
     const innerCircle = circle.querySelector('.inner-circle');
     innerCircle.textContent = `${percent}%`;
-    circle.style.background = `conic-gradient(#ff6a3d ${percent * 3.6}deg, #e5e5e5 0deg)`;
-});
+
+    let currentPercent = 0;
+    const interval = setInterval(() => {
+        if (currentPercent >= percent) {
+            clearInterval(interval);
+        } else {
+            currentPercent++;
+            circle.style.background = `conic-gradient(#ff6a3d ${currentPercent * 3.6}deg, #e5e5e5 0deg)`;
+        }
+    }, 10);
+};
+
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            animateCircle(entry.target);
+            observer.unobserve(entry.target); // Stop observing after animating once
+        }
+    });
+}, { threshold: 0.5 }); // Adjust threshold as needed
+
+circles.forEach(circle => observer.observe(circle));
 
 // 5. Contact Form Submission (Prevent default behavior)
 const form = document.getElementById('contactForm');
