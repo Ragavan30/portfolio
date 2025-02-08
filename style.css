@@ -448,3 +448,44 @@ p {
 .contact-form .btn:hover {
   background-color: #00cce7;
 }
+/* Mobile Screens (Up to 768px width) */
+@media screen and (max-width: 768px) {
+  .intro, .about, .contact-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+  }
+
+  .intro-image img, .about-image img {
+    width: 250px; /* Adjust image size */
+  }
+
+  .services-container, .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  .contact-info, .contact-form {
+    max-width: 100%;
+  }
+}
+
+/* Tablet Screens (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+  .intro-text h1, .about-text h2 {
+    font-size: 36px;
+  }
+
+  .services-container {
+    justify-content: center;
+  }
+
+  .service-box {
+    width: 90%;
+  }
+}
