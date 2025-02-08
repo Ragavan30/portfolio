@@ -4,8 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <marquee>Welcome to my Portfolio !!!</marquee>
-    <link rel="stylesheet" href="style.css">
+    <div class="welcome-text">
+        Welcome to my Portfolio !!!
+    </div>
+    
+    <style>
+      .welcome-text {
+          font-size: 24px;
+          font-weight: bold;
+          text-align: center;
+          padding: 15px;
+          background: linear-gradient(45deg, #be5656, #3e78b6);
+          color: white;
+          border-radius: 8px;
+          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+        <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -25,9 +40,21 @@
             <h1>Hello, It's Me<br><span>Ragav</span><br>And I'm a <span class="typing-animation">Front-end Developer</span></h1>
             <p>I'm a front-end developer and AI enthusiast with a passion for creating and designing websites, frontend development, and exploring AI innovations....</p>
             <div class="social-links">
-                <a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://wa.me/919080286148" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                
+                <!-- Font Awesome for icons -->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+                
                 <a href="https://www.instagram.com/_x.strx.boy.x_/"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.facebook.com/ragavan/"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/ragavan-r-aa8a032b3" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                
+                <!-- Font Awesome for icons -->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+                
             </div>
     </div>
         <div class="intro-image">
@@ -40,7 +67,7 @@
         </div>
         <div class="about-text">
             <h2>About <span>Me</span></h2>
-            <h3>Front-end Developer!</h3>
+            <h3>Tech enthusiast!</h3>
             <p>
                 I am a passionate front-end developer practicing in creating dynamic and visually appealing websites. 
                 My expertise lies in building responsive, user-friendly interfaces with a focus on design and functionality. I am dedicated 
@@ -48,7 +75,8 @@
                 seamless, interactive experiences. My skill set includes HTML, CSS, JavaScript
                 I believe in creating websites that not only look great but also provide an exceptional user experience.
             </p>
-            <a href="#about" class="btn">More About Me</a>
+            <a href="RAGAVAN_R_Resume.pdf" download="Ragav_Resume.pdf" class="btn">Download Resume</a>
+
         </div>
     </section>
 
@@ -106,23 +134,20 @@
     </div>
     
     <section class="services" id="services">
-        <h2>My <span>Services</span></h2>
-        <div class="services-container">
-            <div class="service-box">
-                <div class="service-icon">🖥️</div>
-                <h3>Front-end Development</h3>
-                <p>I create responsive and interactive websites that provide a seamless user experience using HTML, CSS, JavaScript, and React.</p>
-                <a href="#" class="btn">Learn More</a>
-            </div>
-            <div class="service-box">
-                <div class="service-icon">🤖</div>
-                <h3>AI Integration</h3>
-                <p>I explore AI technologies and integrate them into websites to enhance functionality, user engagement, and automation.</p>
-                <a href="#" class="btn">Learn More</a>
-            </div>
+    <h2>My <span>Services</span></h2>
+    <div class="services-container">
+        <div class="service-box">
+            <div class="service-icon">🖥️</div>
+            <h3>Front-end Development</h3>
+            <p>I create responsive and interactive websites that provide a seamless user experience using HTML, CSS, JavaScript, and React.</p>
         </div>
-    </section>
-
+        <div class="service-box">
+            <div class="service-icon">🤖</div>
+            <h3>AI Integration</h3>
+            <p>I explore AI technologies and integrate them into websites to enhance functionality, user engagement, and automation.</p>
+        </div>
+    </div>
+</section>
     <section class="contact" id="contact">
         <div class="contact-content">
             <div class="contact-info">
@@ -134,15 +159,14 @@
                 <p><strong>Github: <a href="https://github.com/Ragavan30" target="_blank">Visit Ragavan's GitHub Profile</a>
             </div>
             <div class="contact-form">
-                <form action="#">
-                    <input type="text" placeholder="Enter Your Name" required>
-                    <input type="email" placeholder="Enter Your Email" required>
-                    <input type="text" placeholder="Enter Your Subject" required>
-                    <textarea placeholder="Enter Your Message" required></textarea>
+                <form action="https://formspree.io/f/meoezrzr" method="POST">
+                    <input type="text" name="name" placeholder="Enter Your Name" required>
+                    <input type="email" name="email" placeholder="Enter Your Email" required>
+                    <input type="text" name="subject" placeholder="Enter Your Subject" required>
+                    <textarea name="message" placeholder="Enter Your Message" required></textarea>
                     <button type="submit" class="btn">Submit</button>
                 </form>
-            </div>
-        </div>
+            </div>          
     </section>
     <script src="script.js"></script>
 </body>
