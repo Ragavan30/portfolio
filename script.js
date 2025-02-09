@@ -19,9 +19,11 @@ let isDeleting = false;
 
 function type() {
     const currentWord = words[wordIndex];
-    
+
     if (isDeleting) {
-        typingText.textContent = currentWord.substring(0, charIndex--);
+        typingText.textContent = currentWord.substring(0, charIndex);
+        charIndex--;
+
         if (charIndex < 0) {
             isDeleting = false;
             wordIndex = (wordIndex + 1) % words.length;
@@ -30,8 +32,10 @@ function type() {
             setTimeout(type, 80); // Deleting speed
         }
     } else {
-        typingText.textContent = currentWord.substring(0, charIndex++);
-        if (charIndex === currentWord.length) {
+        typingText.textContent = currentWord.substring(0, charIndex);
+        charIndex++;
+
+        if (charIndex > currentWord.length) { // Ensure full word is typed
             isDeleting = true;
             setTimeout(type, 2000); // Pause before deleting
         } else {
