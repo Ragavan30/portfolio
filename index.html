@@ -20,6 +20,59 @@
           box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
       }
     </style>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <style>
+            .btn {
+                display: inline-block;
+                padding: 14px 26px;
+                font-size: 18px;
+                font-weight: bold;
+                color: white;
+                background: linear-gradient(45deg, #ff7eb3, #ff758c);
+                border: none;
+                border-radius: 50px;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+                text-decoration: none;
+                text-align: center;
+                box-shadow: 0 4px 10px rgba(255, 117, 140, 0.5);
+                position: relative;
+                overflow: hidden;
+            }
+    
+            .btn::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 300%;
+                height: 300%;
+                background: rgba(255, 255, 255, 0.2);
+                transition: all 0.4s ease-in-out;
+                border-radius: 50%;
+                transform: translate(-50%, -50%) scale(0);
+            }
+    
+            .btn:hover::before {
+                transform: translate(-50%, -50%) scale(1);
+            }
+    
+            .btn:hover {
+                box-shadow: 0 6px 15px rgba(255, 117, 140, 0.7);
+                transform: translateY(-2px);
+            }
+    
+            .btn i {
+                margin-right: 10px;
+            }
+        </style>
         <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -75,7 +128,12 @@
                 seamless, interactive experiences. My skill set includes HTML, CSS, JavaScript
                 I believe in creating websites that not only look great but also provide an exceptional user experience.
             </p>
-            <a href="RAGAVAN_R_Resume.pdf" download="Ragav_Resume.pdf" class="btn">Download Resume</a>
+            <a href="RAGAVAN_R_Resume.pdf" download="Ragav_Resume.pdf" class="btn">
+                <i class="fas fa-download"></i> Download Resume
+            </a>
+        </div>
+    </section>
+    
 
         </div>
     </section>
@@ -148,26 +206,43 @@
         </div>
     </div>
 </section>
-    <section class="contact" id="contact">
-        <div class="contact-content">
-            <div class="contact-info">
-                <h2>Contact <span>Me</span></h2>
-                <p>Let's Work Together</p>
-                <p><strong>Email: </strong> ragavannnn1@gmail.com</p>
-                <p><strong>Phone: </strong> +91 9080286148</p>
-                <p><strong>Linkedln: <a href="https://www.linkedin.com/in/ragavan-r-4a8b46337/" target="_blank">Visit Ragavan's LinkedIn Profile</a>
-                <p><strong>Github: <a href="https://github.com/Ragavan30" target="_blank">Visit Ragavan's GitHub Profile</a>
+<section class="contact" id="contact">
+    <div class="contact-content">
+        <!-- Left Side: Contact Info -->
+        <div class="contact-info">
+            <h2>Contact <span>Me</span></h2>
+            <p>Let's Work Together</p>
+            <p><strong>Email:</strong> ragavannnn1@gmail.com</p>
+            <p><strong>Phone:</strong> +91 9080286148</p>
+
+            <!-- Social Links as Cards -->
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/ragavan-r-aa8a032b3" target="_blank" class="social-card linkedin">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/Ragavan30" target="_blank" class="social-card github">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
             </div>
-            <div class="contact-form">
-                <form action="https://formspree.io/f/meoezrzr" method="POST">
-                    <input type="text" name="name" placeholder="Enter Your Name" required>
-                    <input type="email" name="email" placeholder="Enter Your Email" required>
-                    <input type="text" name="subject" placeholder="Enter Your Subject" required>
-                    <textarea name="message" placeholder="Enter Your Message" required></textarea>
-                    <button type="submit" class="btn">Submit</button>
-                </form>
-            </div>          
-    </section>
+        </div>
+
+        <!-- Right Side: Contact Form -->
+        <div class="contact-form">
+            <form action="https://formspree.io/f/meoezrzr" method="POST">
+                <input type="text" name="name" placeholder="Enter Your Name" required>
+                <input type="email" name="email" placeholder="Enter Your Email" required>
+                <input type="text" name="subject" placeholder="Enter Your Subject" required>
+                <textarea name="message" placeholder="Enter Your Message" required></textarea>
+                <button type="submit" class="btn">
+                    <i class="fas fa-paper-plane"></i> Submit
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
     <script src="script.js"></script>
 </body>
 </html>
