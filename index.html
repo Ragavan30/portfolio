@@ -20,12 +20,6 @@
           box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
       }
     </style>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <style>
@@ -84,6 +78,9 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#skills-section">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -138,7 +135,7 @@
         </div>
     </section>
 
-    <div class="skills-section">
+    <div class="skills-section" id="skills-section">
         <h2>Technical Skills</h2>
         <div class="skill-bar">
             <p>HTML</p>
@@ -203,6 +200,131 @@
             <div class="service-icon">🤖</div>
             <h3>AI Integration</h3>
             <p>I explore AI technologies and integrate them into websites to enhance functionality, user engagement, and automation.</p>
+        </div>
+    </div>
+</section>
+<!-- Projects Section -->
+<section class="projects" id="projects">
+    <h2>My <span>Projects</span></h2>
+    <div class="projects-container">
+        <!-- Project 1 -->
+        <div class="project-box">
+            <div class="project-img">
+                <img src="drowsi.jpg" alt="Project 1">
+            </div>
+            <div class="project-content">
+                <h3>DROWSINESS-DETECTION-AND-ALERT</h3>
+                <p>Drowsiness Detection system with mail alert functionality, highlighting its features, real-time detection, and achieving 80% accuracy.</p>
+                <div class="tech-stack">
+                    <span>PYTHON</span>
+                    <span>ML</span>
+                    <span>Opencv</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Ragavan30/DROWSINESS-DETECTION-AND-ALERT.git" class="btn-small"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-box">
+            <div class="project-img">
+                <img src="earth quk.webp" alt="Project 2">
+            </div>
+            <div class="project-content">
+                <h3>Earth Quake Predection Model</h3>
+                <p>Earthquake Prediction Model using Machine Learning to analyze seismic patterns, forecast potential earthquakes, and visualize risk zones.</p>
+                <div class="tech-stack">
+                    <span>ML</span>
+                    <span>PYTHON</span>
+                    <span>AI</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Ragavan30/AI-BASED-EARTHQUAKE-PREDICTION-MODEL.git" class="btn-small"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-box">
+            <div class="project-img">
+                <img src="Easy_coding.webp" alt="Project 3">
+            </div>
+            <div class="project-content">
+                <h3>AI-Powered Code Debugger Using LLM</h3>
+                <p>An AI-powered code debugger using LLM, providing real-time error detection, code suggestions, and seamless debugging assistance.</p>
+                <div class="tech-stack">
+                    <span>PYTHON</span>
+                    <span>AI</span>
+                    <span>STREAMLIT</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/RAGAV132/AI-CODE-DEBUGER.git" class="btn-small"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Education Section -->
+<section class="education" id="education">
+    <h2>My <span>Education</span></h2>
+    <div class="timeline">
+        <!-- Education 1 -->
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Bachelor of Engineering in Computer Science and Engineering </h3>
+                <h4>Anna University</h4>
+                <p class="timeline-date">2021 - 2025</p>
+                <p><strong>CGPA: 8</strong></p>
+                <p><strong>Specialized in web development and artificial intelligence, blending academic excellence with hands-on experience through technical competitions and immersive workshops</strong></p>
+            </div>
+        </div>
+
+        <!-- Education 2 -->
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Higher Secondary Education-HSC </h3>
+                <h4>AVM SCHOOL</h4>
+                <p class="timeline-date">2020 - 2021</p>
+                <p><strong>Completed higher secondary education in Bio-Mathematics with 81%, passionately exploring computer science through coding competitions and tech exhibitions</strong></p>
+            </div>
+        </div>
+
+<!-- Experience Section -->
+<section class="experience" id="experience">
+    <h2>Work <span>Experience</span></h2>
+    <div class="timeline">
+        <!-- Experience 1 -->
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>AI Intern</h3>
+                <h4>CodSoft</h4>
+                <p class="timeline-date">November 2024 - December 2024</p>
+                <p>Built AI-powered applications, integrating models and APIs to enhance functionality and user experience.</p>
+                <div class="achievements">
+                    <p><i class="fas fa-star"></i> Integrated AI models to automate tasks and enhance app functionality</p>
+                    <p><i class="fas fa-star"></i> Built and deployed 3+ AI-powered features for real-time insights</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Experience 2 -->
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h3>Full-Stack Web Development Intern</h3>
+                <h4>KnackForge soft solutions pvt ltd</h4>
+                <p class="timeline-date">October 2024 - November 2024</p>
+                <p>Contributed as a full-stack development intern, gaining hands-on experience in building dynamic web applications and collaborating with cross-functional teams to deliver high-quality solutions.</p>
+                <div class="achievements">
+                    <p><i class="fas fa-star"></i>Secured an internship certificate for outstanding performance</p>
+                    <p><i class="fas fa-star"></i> Got an hands on Experience in industrial exposure</p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
