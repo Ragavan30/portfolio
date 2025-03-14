@@ -12,7 +12,7 @@ document.querySelectorAll('nav ul li a').forEach(link => {
 
 // 2. Typing Animation Effect
 const typingText = document.querySelector('.typing-animation');
-const words = ["Front-end Developer", "AI Enthusiast"];
+const words = ["Tech enthusiast"];
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
